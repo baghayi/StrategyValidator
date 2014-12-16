@@ -1,0 +1,20 @@
+{
+    "name": "baghayi/strategy-validator",
+    "type": "library",
+    "keywords": ["zf2","apigilitya", "validator", "strategy design pattern"],
+    "homepage": "http://github.com/baghayi/StrategyValidator",
+    "description": "A zf2 validator implementing Strategy design pattern which is mainly created to be used in Apigility.",
+    "require": {
+        "php": ">=5.3.23"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hossein Baghayi",
+            "email": "hossein.baghayi@gmail.com",
+            "homepage": "http://www.adeveloper.org",
+            "role" : "Developer"
+        }
+    ],
+    "minimum-stability": "stable"
+}
