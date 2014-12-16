@@ -16,5 +16,13 @@
             "role" : "Developer"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-0": {
+            "StrategyValidator": "src/"
+        },
+        "classmap": [
+            "Module.php"
+            ]
+    }
 }
