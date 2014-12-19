@@ -5,7 +5,7 @@
 ---
 This is a zf2 module which is mainly created to be used by Apigility. 
 In fact, apigility ships with a number of validators by default and one of them is Zend\Validator\Callable.
-StrategyValidator module is very similar to Callable validator in some ways but  does things slightly different.
+StrategyValidator module is very similar to Callable validator in some ways but  does things slightly differently.
 
 In Callable you will have to create an object in advance, which you may never need it. You may have difficulty passing your domain logic's dependencies to it as well since its not a Class and even if it is you would have to create an instance of it beforehand.
 
