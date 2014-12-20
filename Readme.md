@@ -39,7 +39,7 @@ Now you are ready to go.
 ### Usage
 ---
 
-This validator has already been defined to be used with Apigility and doesn't require you to do anything other than downloading this module and enablding it.
+This validator has already been defined to be used in Apigility and doesn't require you to do anything other than downloading this module and enablding it.
 
 In order to use it, first you will need to create a class which is implementing  the following interface:
 > StrategyValidator/Strategy/StrategyInterface.php
