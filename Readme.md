@@ -38,3 +38,39 @@ Now you are ready to go.
 
 ### Usage
 ---
+
+This validator has already been defined to be used with Apigility and doesn't require you to do anything other than downloading this module and enablding it.
+
+In order to use it, first you will need to create a class which is implementing  the following interface:
+> StrategyValidator/Strategy/StrategyInterface.php
+
+This interface has only one method that needs to be implemented:
+> isValid($value)
+
+It will get value that needs to be validated as its first argument. After been checked of whether or not it is valid you will need to return a `Boolean` value.
+
+Then you need to register your class as a service in the main service manager.
+
+It could be a factory, invokable or whatever else you want it to be. It only needs to be registered in the main service manager and not in the validator plugin manager or any other managers.
+
+
+At last you need to pass the service name to the StrategyValidator validator as strategy.
+
+StrategyValidator validstor has 2 main options.
+First one like others is 'message' for specifiying a message to be shown whenever validation fails.
+The second one is 'strategy' which is for specifying your strategy class. (The class you've aleady created in first step)
+
+After registeting your class in the service manager, you need to set it as 'strategy' for the StrategyValidator validator alongside with the 'message' option.
+
+Adding Strategy and message options in Apigility admin dashboard is pretty straightforward. As it is listed in the select box (in validations section of cource) and could be selected and specified that way.
+
+#### In a nutshell:
+
++ Create a class.
++ Implement StrategyValidator/Strategy/StrategyInterface.php interface.
++ Register as a service in the main service manager.
++ Pass service name as 'strategy' option to validator.
++ Set 'message' option alongside 'strategy'.
+
+That's pretty much it.
+Hope it could have any use.
