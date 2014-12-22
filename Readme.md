@@ -57,11 +57,11 @@ It could be a `factory`, `invokable` or whatever else you want it to be. It only
 
 At last you need to pass the service name to the StrategyValidator validator as `strategy`.
 
-StrategyValidator validstor has 2 main options.
+StrategyValidator validstor `(StrategyValidator\Validator\Strategy)` has 2 main options.
 First one like others is `message` for specifiying a message to be shown whenever validation fails.
 The second one is `strategy` which is for specifying your strategy class. (The class you've aleady created in first step)
 
-After registeting your class in the service manager, you need to set it as `strategy` for the StrategyValidator validator alongside with the `message` option.
+After registeting your class in the service manager, you need to pass it as `strategy` option to the StrategyValidator validator alongside with the `message` option.
 
 Adding Strategy and message options in Apigility admin dashboard is pretty straightforward. As it is listed in the select box (in validations section of cource) and could be selected and specified that way.
 
